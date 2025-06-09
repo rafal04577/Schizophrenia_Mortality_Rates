@@ -30,12 +30,6 @@ Multiple visualisations are included to show:
 - SHAP
 - Matplotlib, Seaborn
 
-## How to Run
-
-1. Clone the repository.
-2. Open the notebook in Jupyter or a compatible environment.
-3. Run cells sequentially. Some plots may require interactive support for SHAP visualisation.
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
