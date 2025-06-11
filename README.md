@@ -1,39 +1,52 @@
-# Schizophrenia Mortality Analysis
+# Schizophrenia Mortality Risk Analysis
 
-This project explores the relationship between schizophrenia, intellectual disabilities, and mortality using machine learning techniques. The goal is to identify significant predictors contributing to increased mortality risk among affected individuals, drawing from a clean and structured healthcare dataset.
-
-## Project Overview
-
-Using Python and libraries like Scikit-learn, XGBoost, and SHAP, this notebook walks through the data preprocessing, model training, performance evaluation, and interpretability of the models used.
-
-Key steps include:
-
-- Data cleaning, encoding, and handling missing values
-- Feature selection and transformation
-- Model training using Random Forest, XGBoost, Logistic Regression, and SVM
-- Model evaluation using accuracy, confusion matrix, and ROC-AUC
-- Interpretability using SHAP values for global and local feature importance
-
-## Visualisations and Interpretation
-
-Multiple visualisations are included to show:
-- Model performance comparisons
-- Feature importances
-- SHAP plots for understanding how features affect predictions
-
-## Technologies Used
-
-- Python (Jupyter Notebook)
-- Pandas, NumPy
-- Scikit-learn
-- XGBoost
-- SHAP
-- Matplotlib, Seaborn
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project explores mortality risk factors in individuals with schizophrenia and intellectual disabilities. Using anonymised clinical records, it builds predictive models to identify high-risk patients and provides interpretable insights into which health indicators contribute most to patient outcomes.
 
 ---
 
-For any queries or collaboration requests, feel free to connect on [LinkedIn](https://www.linkedin.com/in/rafal-bogdan)
+## Objectives
+- Analyse clinical data to uncover factors associated with patient mortality  
+- Train machine learning models to predict mortality outcomes  
+- Use SHAP values to interpret model decisions and assess feature importance  
+
+---
+
+## Dataset
+The dataset consists of anonymised hospital records covering demographics, psychiatric and neurological diagnoses, medication usage, and review flags. It has been fully sanitised to remove any personally identifiable information.
+
+📁 `mental_health_clinical_data.csv`
+
+---
+
+## Tools & Technologies
+- Python (pandas, scikit-learn, XGBoost, SHAP, matplotlib, seaborn)  
+- Jupyter Notebook
+
+---
+
+## Features
+- Models: Logistic Regression, Random Forest (GridSearch), XGBoost, SVM (GridSearch)  
+- Evaluation: ROC AUC, confusion matrix, classification report, cross-validation  
+- Explainability: SHAP value visualisation and feature importance analysis  
+- Preprocessing: Missing value handling, encoding, stratified splitting, feature scaling  
+
+---
+
+## Results & Insights
+- High-risk indicators included polypharmacy, seizure patterns, and lack of regular reviews  
+- Random Forest and XGBoost delivered strong classification performance  
+- SHAP analysis provided clear interpretability of model outputs  
+
+---
+
+## Files Included
+- `Schizophrenia_Mortality_Analysis.ipynb`: Complete and structured notebook  
+- `mental_health_clinical_data.csv`: Cleaned and anonymised clinical dataset  
+- `LICENSE`: MIT License  
+
+---
+
+## Future Enhancements
+- Explore survival modelling techniques  
+- Integrate comorbidity indices and time-series variables  
+- Expand to multi-centre datasets if available
